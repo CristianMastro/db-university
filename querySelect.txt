@@ -1,0 +1,46 @@
+query1
+
+SELECT count(*) 
+FROM students
+WHERE YEAR(date_of_birth) = 1990;
+
+query2
+
+SELECT count(*)
+FROM courses
+WHERE cfu > 10;
+
+query3
+
+SELECT *
+FROM students
+WHERE year(date_of_birth) < 1995;
+
+query4
+
+SELECT count(*) 
+FROM courses
+WHERE year = 1 AND period = 'I semestre';
+
+query5
+
+SELECT count(*)
+FROM exams
+WHERE date = '2020-06-20' and hour > '14:00:00';
+
+query6
+
+SELECT count(*)
+FROM degrees
+WHERE level = 'magistrale';
+
+query 7
+
+SELECT count(*)
+FROM departments;
+
+query 8
+
+SELECT count(*)
+FROM teachers
+WHERE phone IS null;

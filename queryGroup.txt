@@ -1,0 +1,6 @@
+query 1
+
+SELECT count(*), YEAR(enrolment_date) AS anno
+FROM students
+GROUP BY anno
+ORDER BY anno;
