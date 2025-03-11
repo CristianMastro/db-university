@@ -4,3 +4,20 @@ SELECT count(*), YEAR(enrolment_date) AS anno
 FROM students
 GROUP BY anno
 ORDER BY anno;
+
+query 2 
+
+SELECT count(*), office_address
+FROM teachers
+GROUP BY office_address;
+
+query 3 
+
+SELECT AVG(vote)
+FROM exam_student;
+
+query 4
+
+SELECT COUNT(*), name
+FROM departments
+GROUP BY name;
