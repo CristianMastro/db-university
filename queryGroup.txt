@@ -13,11 +13,12 @@ GROUP BY office_address;
 
 query 3 
 
-SELECT AVG(vote)
-FROM exam_student;
+SELECT AVG(vote), exam_id
+FROM exam_student
+group by exam_id;
 
 query 4
 
-SELECT COUNT(*), name
-FROM departments
-GROUP BY name;
+SELECT COUNT(id), department_id
+FROM degrees
+GROUP BY department_id;
